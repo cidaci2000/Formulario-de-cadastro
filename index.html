@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>aula formulário CSS</title>
+<style>
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, rgb(31, 198, 12), rgb(5, 100, 19));
+     }
+        .pcentral{ 
+        color: rgb(255,255,255);
+        background-color:rgba(0,0,0,0.5);
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        Padding: 20px;
+        border-radius: 15px;
+        }
+
+        fieldset{
+            border: 5px solid rgb(146, 233, 137);
+        }
+
+        legend{
+            background-color: rgb(192, 239, 117);
+            border-radius: 5px;
+            text-align:center;
+            border:3px rgb(146,233,137);
+            padding: 10px;
+        }
+    #submit{
+        background-image: linear-gradient(to right, rgb(31, 198, 12), rgb(5, 100, 19));
+         width:100%;
+         padding:10px;
+         color: white;
+        font-size:15px;
+        border:none;
+        border-radius: 5px;
+        cursor:pointer;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="pcentral">
+     <form>
+        <fieldset>
+             
+           <label for="nome">NOME COMPLETO</label> <br>
+            <input type="text" name="nome" id="nome" placeholder="digite aqui"> <br>
+            <label for="email">EMAIL</label> <br>
+            <input type="text" name="email" id="email" placeholder="digite aqui"> <br>
+            <label for="endereco">ENDEREÇO</label> <br>
+            <input type="text" name="endereco" id="endereco" placeholder="digite aqui">
+         <p>SEXO</p>
+         <input type="radio" id="feminino" name="genero" value="feminino">
+         <label for="feminino"> FEMININO</label> <br>
+         <input type="radio" id="masculino" name="genero" value="masculino">
+         <label for="masculino"> MASCULINO</label> <br>
+         <input type="radio" id="outro" name="genero" value="outro">
+         <label for="outro"> OUTRO</label> <br><br><br>
+
+          <label for="datan">DATA DE NASCIMENTO</label> <br>
+          <input  type="date" name="datan" id="datan">
+
+          <br><br><br>
+          <label for="cidade">CIDADE</label> <br>
+          <input type="text" name="cidade" id="cidade" placeholder="digite aqui"> <br>
+          <label for="estado">ESTADO</label> <br>
+          <input type="text" name="estado" id="estado" placeholder="digite aqui"> <br>
+          <label for="telefone">TELEFONE</label> <br>
+          <input type="text" name="telefone" id="telefone" placeholder="digite aqui">
+          <br><br>
+          <input type="submit" name="submit" id="submit">
+       
+        </fieldset>
+     </form>
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
